@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradiant"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="820dp"
+        tools:context=".MapsActivity" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="200dp"
+        android:onClick="floating_action_button1"
+        android:rotation="335.90"
+        android:src="@drawable/ic_send_black_24dp"
+        app:backgroundTint="#FFa500"
+        app:backgroundTintMode="multiply"
+        app:elevation="10dp"
+        app:fabCustomSize="62dp"
+        app:maxImageSize="35dp"
+        tools:ignore="DuplicateIds"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="130dp"
+        android:drawingCacheQuality="auto"
+        android:onClick="floating_action_button2"
+        android:src="@drawable/baseline_touch_app_black_18dp"
+        app:backgroundTint="#FFff00"
+        app:backgroundTintMode="multiply"
+        app:elevation="10dp"
+        app:fabCustomSize="60dp"
+        app:fabSize="auto"
+        app:maxImageSize="35dp"
+        tools:ignore="DuplicateIds"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="60dp"
+        android:drawingCacheQuality="auto"
+        android:onClick="floating_action_button3"
+        android:src="@drawable/baseline_report_black_18dp"
+        app:backgroundTint="#ff0d0d"
+        app:backgroundTintMode="multiply"
+        app:elevation="10dp"
+        app:fabCustomSize="60dp"
+        app:fabSize="auto"
+        app:maxImageSize="30dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="6dp"
+        android:drawingCacheQuality="auto"
+        android:src="@drawable/ic_info_black_24dp"
+        app:backgroundTint="@null"
+        app:backgroundTintMode="multiply"
+        app:elevation="10dp"
+        app:fabCustomSize="40dp"
+        app:fabSize="auto"
+        app:maxImageSize="35dp"
+        tools:ignore="DuplicateIds"
+        android:onClick="floating_action_button4"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="55dp"
+        app:layout_dodgeInsetEdges="left">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:text="Description\n\nIntimate:\t\tBy pressing this you can intimate alert\nto added contact through message.\n\n\nReport:\t\tBy pressing this you can report crime\nif any other persons are in critical situations.\n\n\nEmergency:\t\tBy pressing this you can inform the\npolice that you are in unavoidable situations.\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tDon't Worry i'm With You :)"/>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

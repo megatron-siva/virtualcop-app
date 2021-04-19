@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By"
+        android:textStyle="bold"
+        android:textSize="35dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/six"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Associate Contributors:\n\t\tSindhu\n\t\tSri Sneka\n\t\tSivappriyan\n\t\tSrivathsun\n\t\tSubash Chandhra Bose\n\t\tVineth Nirej"
+        android:textSize="25dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
